@@ -7,6 +7,10 @@ body {
   font-size: 16px;
 }
 
+main{
+  background-image: url("poop.png")
+}
+
 header {
   background-color: #333;
   color: #fff;
