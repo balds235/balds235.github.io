@@ -2,64 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xavi Quezada's Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavi Quezada's Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
         }
 
-        main {
-            max-width: 800px;
-            margin: auto;
+        .container {
+            max-width: 1200px;
+            width: 100%;
         }
 
-        h1, h4 {
+        .header {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
             text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
         }
 
-        nav ul {
-            display: flex;
-            justify-content: space-around;
+        .header h1 {
+            font-size: 3rem;
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
 
-        nav a {
-            color: #007bff;
-            font-weight: bold;
+        .header .subtitle {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .header .description {
+            font-size: 1.1rem;
+            color: #718096;
+            margin-bottom: 25px;
+        }
+
+        .contact {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        .contact a {
+            color: #667eea;
             text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
 
-        nav a:hover {
-            text-decoration: underline;
+        .contact a:hover {
+            color: #764ba2;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
+        .profile-image {
+            margin: 30px auto;
+            max-width: 200px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .navigation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .nav-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px 25px;
+            text-align: center;
+            text-decoration: none;
+            color: #2d3748;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .nav-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .nav-card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .nav-card-description {
+            font-size: 0.95rem;
+            color: #718096;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header .subtitle {
+                font-size: 1rem;
+            }
+
+            .navigation-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Xavi Quezada's Website!</h1>
-        <p>This is my Personal Portfolio!</p>
-        <p>Here I post my projects, works, and other stuff. ;D</p>
-        <h4>If you have any questions, feel free to contact me at <a href="mailto:xaviquezada08@gmail.com">xaviquezada08@gmail.com</a></h4>
+    <div class="container">
+        <div class="header">
+            <h1>Xavi Quezada</h1>
+            <p class="subtitle">Personal Portfolio</p>
+            <p class="description">Welcome! Here I share my projects, works, and other endeavors.</p>
+            
+            <div class="profile-image">
+                <img src="rah.png" alt="Profile">
+            </div>
 
-        <img src="rah.png" alt="Wow!" width="200" height="100">
+            <p class="contact">
+                Questions? Feel free to reach out at 
+                <a href="mailto:xaviquezada08@gmail.com">xaviquezada08@gmail.com</a>
+            </p>
+        </div>
 
-        <nav>
-            <ul>
-                <li><a href="/biblestuff/bible.html">DEAD  Bible Translation</a></li>
-                <li><a href="/code/code.html">My Coding Projects</a></li>
-                <li><a href="/schoolshitsnizi/home.html">My School Projects</a></li>
-                <li><a href="/robo/robo.html">My Tech Projects</a></li>
-            </ul>
-        </nav>
-    </main>
+        <div class="navigation-grid">
+            <a href="/biblestuff/bible.html" class="nav-card">
+                <div class="nav-card-icon">📖</div>
+                <div class="nav-card-title">Bible Translation</div>
+                <div class="nav-card-description">My personal Bible translation project</div>
+            </a>
+
+            <a href="/code/code.html" class="nav-card">
+                <div class="nav-card-icon">💻</div>
+                <div class="nav-card-title">Coding Projects</div>
+                <div class="nav-card-description">Software development and programming work</div>
+            </a>
+
+            <a href="/schoolshitsnizi/home.html" class="nav-card">
+                <div class="nav-card-icon">🎓</div>
+                <div class="nav-card-title">School Projects</div>
+                <div class="nav-card-description">Academic achievements and coursework</div>
+            </a>
+
+            <a href="/robo/robo.html" class="nav-card">
+                <div class="nav-card-icon">🔧</div>
+                <div class="nav-card-title">Tech Projects</div>
+                <div class="nav-card-description">Hardware and physical technology projects</div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
