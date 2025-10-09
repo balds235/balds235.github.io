@@ -1,24 +1,133 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Highschool</title>
-        <link rel="stylesheet" href="highschool.css">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>High School Highlights</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            color: #1f2933;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            padding: 0;
+            margin: 0 0 32px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            border: 1px solid #0077cc;
+            color: #0077cc;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #0077cc;
+            color: white;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 26px;
+            margin-bottom: 24px;
+            box-shadow: 0 12px 24px rgba(15, 34, 58, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        ul {
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <main>
         <header>
-            <h1>Highschool</h1>
+            <h1>High School Highlights</h1>
+            <p>
+                The classes I take in high school fuel my capstone project and future engineering goals. Here are the learning
+                threads that matter most right now.
+            </p>
         </header>
-        <main>
+
+        <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./schoolshitsnizi/high/home.html/">School Hub</a></li>
-                <li><a href="./schoolshitsnizi/high/apcalc.html">AP Calc AB-BC</a></li>
-                <li><a href="./schoolshitsnizi/high/apworld.html">AP World History</a></li>
-                <li><a href="./schoolshitsnizi/high/apush.html">APUSH</a></li>
-                <li><a href="./schoolshitsnizi/high/physics.html">Physics</li>
-                <li><a href="./schoolshitsnizi/high/engineering.html">Engineering</li>
-                <li><a href="./schoolshitsnizi/high/philosophy.html">Philosophy</li>
+                <li><a href="../index.html">Portfolio Home</a></li>
+                <li><a href="/schoolshitsnizi/home.html">School Hub</a></li>
+                <li><a href="/schoolshitsnizi/capstone.html">Capstone Project</a></li>
             </ul>
-        </main>
-    </body>
+        </nav>
+
+        <section>
+            <h2>Engineering &amp; Design</h2>
+            <p>
+                Engineering lab time is where I apply CAD strategies from the capstone, learn machining basics, and collaborate on
+                prototypes. This class directly informs my 1C2S engine layout and testing plans.
+            </p>
+            <ul>
+                <li>Weekly prototyping cycles that mirror capstone deliverables.</li>
+                <li>Peer reviews that sharpen how I communicate complex mechanical ideas.</li>
+                <li>Hands-on practice with rapid iteration and design documentation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>AP Calculus &amp; AP Physics</h2>
+            <p>
+                Calculus and physics anchor the math behind port timing, crank rotation, and force analysis. I continuously bring
+                formulas from class back into my CAD notebooks.
+            </p>
+            <ul>
+                <li>Applying derivatives to model piston velocity and acceleration.</li>
+                <li>Using energy and momentum concepts to evaluate the crankshaft design.</li>
+                <li>Developing comfort with units, conversions, and dimensional analysis.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Humanities &amp; Reflection</h2>
+            <p>
+                Courses like APUSH and Philosophy improve how I write reflections, craft presentations, and tell the story of my
+                engineering journey. Communication matters as much as the build.
+            </p>
+            <ul>
+                <li>Structured writing practice supports clearer milestone updates.</li>
+                <li>Research skills from history classes help me vet engine resources.</li>
+                <li>Discussion-based learning strengthens public speaking for final demos.</li>
+            </ul>
+        </section>
+    </main>
+</body>
 </html>

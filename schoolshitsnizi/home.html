@@ -2,56 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xavi Quezada - School Hub</title>
+    <title>School Projects &amp; Capstone</title>
     <link rel="stylesheet" href="../styles.css">
-
     <style>
-      
-
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f5f5f5;
             margin: 0;
-            padding: 20px;
+            color: #1f2933;
         }
 
         main {
-            max-width: 800px;
-            margin: auto;
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
         }
 
-        h1, h2, h3, ul {
+        header {
             text-align: center;
+            margin-bottom: 30px;
         }
 
-        ul {
-            list-style-type: none;
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            margin: 0 auto;
+            max-width: 720px;
+            line-height: 1.6;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
             padding: 0;
-            margin: 20px 0;
+            margin: 24px 0 40px;
         }
 
-        li a {
+        nav a {
             display: inline-block;
-            color: #007bff;
-            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            border: 1px solid #0077cc;
+            color: #0077cc;
+            font-weight: 600;
             text-decoration: none;
-            margin: 10px;
         }
 
-        li a:hover {
-            text-decoration: underline;
+        nav a:hover,
+        nav a:focus {
+            background-color: #0077cc;
+            color: white;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 12px 24px rgba(15, 34, 58, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        ul.highlight-list {
+            margin: 16px 0 0;
+            padding-left: 20px;
+        }
+
+        ul.highlight-list li {
+            margin-bottom: 10px;
+        }
+
+        .link-row {
+            margin-top: 18px;
+        }
+
+        .link-row a {
+            margin-right: 16px;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>School Hub</h1>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/schoolshitsnizi/high.html">Highschool</a></li>
-            <li><a href="/schoolshitsnizi/college.html">College</a></li>
-            <li><a href="/schoolshitsnizi/extra.html">Extracurriculars</a></li>
-        </ul>
+        <header>
+            <h1>School Projects &amp; Capstone Hub</h1>
+            <p>
+                This is the home for my academic work. Dive into my senior capstone—an in-depth exploration of two-stroke
+                engines—alongside highlights from high school classes, dual-enrollment courses, and extracurricular pursuits.
+            </p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Portfolio Home</a></li>
+                <li><a href="/schoolshitsnizi/capstone.html">Capstone Project</a></li>
+                <li><a href="/schoolshitsnizi/high.html">High School Highlights</a></li>
+                <li><a href="/schoolshitsnizi/college.html">College Coursework</a></li>
+                <li><a href="/schoolshitsnizi/extra.html">Extracurriculars</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Senior Capstone &mdash; 1C2S Engine Development</h2>
+            <p>
+                My final-year project focuses on learning CAD from the ground up, researching two-stroke engines, and building
+                a transparent demonstration model. The goal is to illustrate how intake, compression, power, and exhaust
+                phases flow through a two-stroke powerplant using smoke to trace air movement.
+            </p>
+            <ul class="highlight-list">
+                <li><strong>Skills:</strong> CAD fundamentals, design iteration, engine research, rapid prototyping.</li>
+                <li><strong>Current Focus:</strong> Iterating on the crankshaft, connecting rod geometry, and clear housing for visibility.</li>
+                <li><strong>Latest Update:</strong> Completed a detailed 2D layout that resolves early design issues and prepares the model for 3D refinement.</li>
+            </ul>
+            <div class="link-row">
+                <a href="/schoolshitsnizi/capstone.html">Read the full milestone log</a>
+                <a href="https://docs.google.com/document/d/1G8KBINo_NIzyDGhaiYPpqcOgxjcHKpB0bkB-TUfUiVk/edit?usp=sharing" target="_blank" rel="noopener">Planning document</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>High School Learning Journey</h2>
+            <p>
+                I challenge myself with AP coursework and engineering electives that connect directly to my capstone interests.
+                Physics, calculus, and engineering design classes inform how I approach the engine project and future goals in
+                mechanical engineering.
+            </p>
+            <ul class="highlight-list">
+                <li>Applying classroom theory to real-world prototyping in the engineering lab.</li>
+                <li>Reflecting weekly on progress to build perseverance and the habit of seeking to understand.</li>
+                <li>Documenting milestones to track growth over the semester.</li>
+            </ul>
+            <div class="link-row">
+                <a href="/schoolshitsnizi/high.html">See high school highlights</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Beyond the Classroom</h2>
+            <p>
+                Dual-enrollment courses at LACC and extracurricular teams (like robotics and debate) build complementary skills.
+                They sharpen collaboration, technical communication, and time management&mdash;all crucial to finishing my capstone strong.
+            </p>
+            <div class="link-row">
+                <a href="/schoolshitsnizi/college.html">College coursework</a>
+                <a href="/schoolshitsnizi/extra.html">Extracurricular snapshots</a>
+            </div>
+        </section>
     </main>
 </body>
 </html>

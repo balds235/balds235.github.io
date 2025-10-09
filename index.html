@@ -2,64 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Xavi Quezada's Website</title>
+    <title>Xavi Quezada | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f5f5f5;
             margin: 0;
-            padding: 20px;
+            color: #1f2933;
         }
 
-        main {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h1, h4 {
+        header {
+            background: linear-gradient(135deg, #003366, #0077cc);
+            color: white;
+            padding: 60px 20px 40px;
             text-align: center;
         }
 
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            max-width: 720px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: white;
+            border-bottom: 1px solid #d9e2ec;
+        }
+
         nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 12px 20px;
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
 
         nav a {
-            color: #007bff;
-            font-weight: bold;
+            color: #003366;
+            font-weight: 600;
             text-decoration: none;
         }
 
-        nav a:hover {
+        nav a:hover, nav a:focus {
             text-decoration: underline;
         }
 
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 12px 24px rgba(15, 34, 58, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        .capstone-highlights {
+            display: grid;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .capstone-highlights li {
+            margin: 0;
+        }
+
+        .cta-link {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 16px;
+            background-color: #0077cc;
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .cta-link:hover,
+        .cta-link:focus {
+            background-color: #005fa3;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.1rem;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Xavi Quezada</h1>
+        <p>
+            Welcome to my portfolio! I am a student who loves blending engineering, design, and storytelling.
+            Explore my school projects—especially my senior capstone—alongside coding experiments and creative work.
+        </p>
+        <p>
+            Reach out at <a style="color: #ffdd99; font-weight: 600;" href="mailto:xaviquezada08@gmail.com">xaviquezada08@gmail.com</a>.
+        </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/schoolshitsnizi/home.html">School Projects &amp; Capstone</a></li>
+            <li><a href="/code/code.html">Coding Projects</a></li>
+            <li><a href="/biblestuff/bible.html">DEAD Bible Translation</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <h1>Xavi Quezada's Website!</h1>
-        <p>This is my Personal Portfolio!</p>
-        <p>Here I post my projects, works, and other stuff. ;D</p>
-        <h4>If you have any questions, feel free to contact me at <a href="mailto:xaviquezada08@gmail.com">xaviquezada08@gmail.com</a></h4>
-
-        <img src="rah.png" alt="Wow!" width="200" height="100">
-
-        <nav>
-            <ul>
-                <li><a href="/biblestuff/bible.html">DEAD  Bible Translation</a></li>
-                <li><a href="/code/code.html">My Coding Projects</a></li>
-                <li><a href="/schoolshitsnizi/home.html">My School Projects</a></li>
-                <li><a href="/robo/robo.html">My Tech Projects</a></li>
+        <section>
+            <h2>Featured Senior Capstone: 1C2S Engine Development</h2>
+            <p>
+                For my senior capstone I am designing and 3D-printing a one-cylinder, two-stroke demonstration engine.
+                The project chronicles my journey into CAD, engine research, prototyping, and teaching others how two-stroke
+                powerplants operate.
+            </p>
+            <ul class="capstone-highlights">
+                <li><strong>Driving Question:</strong> How can I learn CAD to model a one-cylinder two-stroke engine and 3D-print a non-firing demonstration model?</li>
+                <li><strong>What I&apos;m Building:</strong> A transparent, smoke-ready model that clearly shows both strokes and the internal airflow.</li>
+                <li><strong>Why It Matters:</strong> The work strengthens my mechanical engineering fundamentals—CAD, design iteration, and engine theory—while creating a teaching tool for my peers.</li>
             </ul>
-        </nav>
+            <a class="cta-link" href="/schoolshitsnizi/capstone.html">Read the full capstone story</a>
+        </section>
+
+        <section>
+            <h2>School Highlights</h2>
+            <p>
+                From dual-enrollment college courses to engineering electives, I am deliberate about choosing classes that push my
+                understanding of math, physics, and design. Visit the School Hub to explore coursework, reflections, and goals.
+            </p>
+            <a class="cta-link" href="/schoolshitsnizi/home.html">Explore school work</a>
+        </section>
+
+        <section>
+            <h2>What&apos;s Next</h2>
+            <p>
+                Upcoming milestones include refining the crankshaft assembly, validating tolerances for reliable motion, and preparing
+                the final polished model for demonstration day. I&apos;m also documenting each iteration so others can follow the build process.
+            </p>
+        </section>
     </main>
 </body>
 </html>

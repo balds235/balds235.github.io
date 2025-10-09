@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1C2S Engine Development Capstone</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            color: #1f2933;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            margin: 0 auto;
+            max-width: 760px;
+            line-height: 1.6;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+            padding: 0;
+            margin: 0 0 32px;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 9999px;
+            border: 1px solid #0077cc;
+            color: #0077cc;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #0077cc;
+            color: white;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 28px;
+            box-shadow: 0 12px 24px rgba(15, 34, 58, 0.08);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #003366;
+        }
+
+        .grid-two {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .milestone {
+            border: 1px solid #d9e2ec;
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #f8fbff;
+        }
+
+        .milestone h3 {
+            margin-top: 0;
+            color: #005fa3;
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: minmax(160px, 25%) 1fr;
+            gap: 12px 24px;
+            margin: 0;
+        }
+
+        dt {
+            font-weight: 600;
+            color: #003366;
+        }
+
+        dd {
+            margin: 0;
+        }
+
+        ul {
+            margin-top: 12px;
+        }
+
+        .resource-links a {
+            display: inline-block;
+            margin-right: 16px;
+        }
+
+        @media (max-width: 640px) {
+            dl {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>1C2S Engine Development</h1>
+            <p>
+                My senior capstone challenges me to master CAD software, study two-stroke engine design, and build a transparent
+                demonstration engine. The final model will cycle through both strokes reliably while making every internal
+                motion visible with smoke trails.
+            </p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Portfolio Home</a></li>
+                <li><a href="/schoolshitsnizi/home.html">School Hub</a></li>
+                <li><a href="#milestones">Milestones</a></li>
+                <li><a href="#reflections">Reflections</a></li>
+                <li><a href="#next-steps">Next Steps</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h2>Project Overview</h2>
+            <dl>
+                <dt>Driving Question</dt>
+                <dd>How can I learn CAD to model a one-cylinder two-stroke engine and 3D-print a non-firing demonstration model to show how it works?</dd>
+                <dt>Project Summary</dt>
+                <dd>I am researching two-stroke configurations, sketching concepts, developing CAD models, 3D-printing iterative prototypes, and refining the assembly until it can run through both strokes smoothly without breaking.</dd>
+                <dt>Final Deliverable</dt>
+                <dd>A polished, transparent engine model with visible internals that can be cycled by hand while smoke traces the airflow.</dd>
+                <dt>Project Intentions</dt>
+                <dd>Build core CAD proficiency, deepen my understanding of engine mechanics, and practice design iteration and rapid prototyping.</dd>
+                <dt>Personal Goals</dt>
+                <dd>
+                    <ul>
+                        <li><strong>Career Ready Practice #1:</strong> Apply technical skills and academic knowledge.</li>
+                        <li><strong>Career Ready Practice #4:</strong> Use technology (CAD) to enhance productivity.</li>
+                        <li><strong>SLOs:</strong> Seek to Understand &amp; Persevere.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="resource-links">
+                <a href="https://youtu.be/cuiaZrrJU4w" target="_blank" rel="noopener">LEGO modeling demo</a>
+                <a href="https://docs.google.com/document/d/1G8KBINo_NIzyDGhaiYPpqcOgxjcHKpB0bkB-TUfUiVk/edit?usp=sharing" target="_blank" rel="noopener">Layout planning doc</a>
+                <a href="https://docs.google.com/document/d/1-U_PpgMlVUISOu4doHjIVN6OClfXc17LgIoYRoKqngk/edit?usp=sharing" target="_blank" rel="noopener">Weekly narrative &amp; reflection</a>
+            </div>
+        </section>
+
+        <section id="milestones">
+            <h2>Milestones</h2>
+            <div class="milestone">
+                <h3>Milestone 1 &mdash; Learn CAD</h3>
+                <p><strong>Goal:</strong> Model LEGO bricks without relying on live tutorials.</p>
+                <div class="grid-two">
+                    <div>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Selected Onshape for its Chromebook compatibility and familiar workflow.</li>
+                            <li>Practiced sketches, extrusions, fillets, and linear patterns while rebuilding LEGO components.</li>
+                            <li>Produced a recorded walkthrough assembling accurate LEGO pieces from a technical drawing.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Weekly Snapshot</h4>
+                        <ul>
+                            <li><strong>Mon 9/8:</strong> Explored CAD options and essential tools (sketching, extruding, fillets).</li>
+                            <li><strong>Wed 9/10:</strong> Studied speed-CAD videos to understand measurement tools.</li>
+                            <li><strong>Fri 9/12:</strong> Iterated on LEGO brick dimensions using distance and pattern features.</li>
+                            <li><strong>Sat 9/13:</strong> Completed the deliverable: building a brick from a technical sheet without video guidance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>SLO Focus:</strong> Seek to Understand &mdash; mastered foundational CAD tools through tutorials and deliberate practice.</p>
+            </div>
+
+            <div class="milestone">
+                <h3>Milestone 1 Extension &mdash; Complex Models</h3>
+                <p><strong>Goal:</strong> Create more advanced CAD parts while recovering from illness.</p>
+                <div class="grid-two">
+                    <div>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Deconstructed gate hinge schematics to practice tangents, mirrors, counterbores, and remove-face tools.</li>
+                            <li>Balanced persistence with self-care by requesting an extension during a difficult week.</li>
+                            <li>Gained confidence combining curves, mirrors, and patterned features in a second complex model.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Weekly Snapshot</h4>
+                        <ul>
+                            <li><strong>Fri 9/19:</strong> Reset weekly goals after illness and chose realistic deliverables.</li>
+                            <li><strong>Sun 9/21:</strong> Completed the gate hinge model, solving tangent and dimension challenges.</li>
+                            <li><strong>Mon 9/22:</strong> Built a second advanced part, applying lessons from the hinge model.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>SLO Focus:</strong> Persevere &mdash; stayed committed despite setbacks and refined work through repetition.</p>
+            </div>
+
+            <div class="milestone">
+                <h3>Milestone 2 &mdash; Model the Engine</h3>
+                <p><strong>Goal:</strong> Develop a functioning layout for the 1C2S engine.</p>
+                <div class="grid-two">
+                    <div>
+                        <h4>Highlights</h4>
+                        <ul>
+                            <li>Researched port timing, rotary valves, and crankcase scavenging to inform the layout.</li>
+                            <li>Drafted an initial 3D concept, then pivoted to a clearer 2D side profile to resolve design gaps.</li>
+                            <li>Positioned intake/exhaust ports, crank geometry, and piston travel to support full-cycle motion.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Weekly Snapshot</h4>
+                        <ul>
+                            <li><strong>Thu 9/25:</strong> Gathered references and documented the first concept.</li>
+                            <li><strong>Sat 9/27:</strong> Identified issues with the crankshaft and connecting rod alignment.</li>
+                            <li><strong>Sat 10/4:</strong> Rebuilt the layout in 2D, locking in measurements for dead-center positions and port placement.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>SLO Focus:</strong> Apply Technology to Enhance Productivity &mdash; leveraged Onshape tools strategically to iterate toward a manufacturable layout.</p>
+            </div>
+        </section>
+
+        <section id="reflections">
+            <h2>Reflections</h2>
+            <ul>
+                <li>Learning CAD required patience and intentional repetition; every frustrating measurement challenge led to a new technique.</li>
+                <li>Design reviews—especially after setbacks—helped me reframe goals and choose the right scope for each milestone.</li>
+                <li>Documenting progress keeps me accountable and creates a playbook for future engineering projects.</li>
+            </ul>
+        </section>
+
+        <section id="next-steps">
+            <h2>Next Steps</h2>
+            <ul>
+                <li>Finalize 3D geometry for the crankshaft, connecting rod, and piston interface.</li>
+                <li>Prototype the transparent housing and ensure tolerances allow smooth manual cycling.</li>
+                <li>Plan smoke/fog demonstrations and supporting visuals for the final presentation.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
