@@ -1,97 +1,114 @@
-body {
-  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Comic Sans", cursive;
-    font-size: 16px;
-    background-image: url("poop.gif")
+/* Modern Portfolio Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Comic Sans', cursive, sans-serif;
+  font-size: 17px;
+  background: linear-gradient(120deg, #0f172a 0%, #1041aa 100%);
+  color: #fff;
+  min-height: 100vh;
+}
+
+main, .main-card {
+  background: rgba(16, 65, 170, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  border: 1.5px solid #1e293b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  margin: 0 0 0.5em 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.1em;
+  color: #e5e7eb;
+}
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 2em 0 0 0;
+  list-style: none;
+}
+nav li {
+  margin: 0 0.5em;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+img {
+  display: block;
+  margin: 1.5em auto 1.5em auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+}
+
+header {
+  background-color: #222b3a;
+  color: #fff;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  border-bottom: 1.5px solid #1e293b;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (max-width: 800px) {
+  main, .main-card {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
   }
-  
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
-  
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ff0000;
-  }
-  
-  
-  p {
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-  
-  
-  a {
-    color: #0077cc;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  
-  ul,
-  ol {
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th,
-  td {
-    padding: 8px;
-    border: 1px solid #ddd;
-  }
-  
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  ul,
-  ol {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  /* i want to make the image centered*/
-  
   img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
   }
+}
