@@ -1,1 +1,63 @@
+:root {
+	--bg: #0f172a;
+	--card: #111827;
+	--text: #e5e7eb;
+	--muted: #9ca3af;
+	--accent: #60a5fa;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+	line-height: 1.6;
+}
+
+header {
+	padding: 1rem 1.25rem;
+	background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+}
+
+h1 {
+	margin: 0 0 .25rem 0;
+	font-size: 1.75rem;
+}
+
+nav .breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: .5rem;
+	color: var(--muted);
+}
+
+nav .breadcrumbs li::after {
+	content: "/";
+	margin-left: .5rem;
+	color: var(--muted);
+}
+nav .breadcrumbs li:last-child::after { content: ""; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+main {
+	padding: 1.25rem;
+}
+
+section#classes {
+	background: var(--card);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 12px;
+	padding: 1rem 1.25rem;
+	max-width: 800px;
+}
+
+h2, h3 { margin-top: 0.5rem; }
+
+ul { padding-left: 1.2rem; }
+
+.ap-list li { margin: .15rem 0; }
 
