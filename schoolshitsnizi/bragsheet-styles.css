@@ -1,0 +1,141 @@
+/* Bragsheet Document Styles - Optimized for essay/document reading */
+:root {
+	--bg: #0f172a;
+	--card: #111827;
+	--text: #e5e7eb;
+	--muted: #9ca3af;
+	--accent: #60a5fa;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.7;
+	font-size: 16px;
+}
+
+header {
+	padding: 1rem 1.25rem;
+	background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+}
+
+h1 {
+	margin: 0 0 .25rem 0;
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+nav .breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: .5rem;
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+nav .breadcrumbs li::after {
+	content: "/";
+	margin-left: .5rem;
+	color: var(--muted);
+}
+nav .breadcrumbs li:last-child::after { content: ""; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+main {
+	padding: 2rem 1.25rem;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.document-container {
+	background: var(--card);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 12px;
+	padding: 2.5rem 3rem;
+	max-width: 800px;
+	margin: 0 auto;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+	font-size: 1.4rem;
+	margin-top: 2rem;
+	margin-bottom: 0.75rem;
+	font-weight: 600;
+	color: #fff;
+	border-bottom: 2px solid rgba(96, 165, 250, 0.3);
+	padding-bottom: 0.25rem;
+}
+
+h3 {
+	font-size: 1.15rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+h2:first-of-type {
+	margin-top: 0;
+}
+
+p {
+	margin-bottom: 1.2em;
+	line-height: 1.8;
+	color: var(--text);
+}
+
+ul, ol {
+	padding-left: 1.8rem;
+	margin-bottom: 1.2em;
+}
+
+li {
+	margin-bottom: 0.6em;
+	line-height: 1.7;
+}
+
+strong {
+	color: #fff;
+	font-weight: 600;
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+	font-weight: 500;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* For specific sections */
+.section {
+	margin-bottom: 2rem;
+}
+
+.section:last-child {
+	margin-bottom: 0;
+}
+
+/* Navigation at bottom */
+.nav-footer {
+	margin-top: 3rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+@media (max-width: 768px) {
+	.document-container {
+		padding: 1.5rem 1.25rem;
+	}
+	main {
+		padding: 1rem 0.75rem;
+	}
+}
